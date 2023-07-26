@@ -9,7 +9,7 @@
     "routes":[
         {
             "src":"(.*)",
-            "dest": "src/server.tsgit "
+            "dest": "src/server.ts "
         }
     ]
 }
