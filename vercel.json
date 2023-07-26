@@ -2,14 +2,23 @@
     "version":2,
     "builds":[
         {
+<<<<<<< HEAD
             "src": "./dist/server.js",
             "use": "@now/node"
+=======
+            "src": "./src/server.ts",
+            "use": "@vercel/node"
+>>>>>>> 0d6ef26cbd9a8cfed3f33370e858028cbb05301b
         }
     ],
     "routes":[
         {
             "src":"(.*)",
+<<<<<<< HEAD
             "dest": "/dist/server.ts "
+=======
+            "dest": "/src/server.ts "
+>>>>>>> 0d6ef26cbd9a8cfed3f33370e858028cbb05301b
         }
     ]
 }

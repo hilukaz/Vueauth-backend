@@ -1,5 +1,8 @@
 node_modules
 # Keep environment variables out of version control
 .env
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0d6ef26cbd9a8cfed3f33370e858028cbb05301b
 .vercel
