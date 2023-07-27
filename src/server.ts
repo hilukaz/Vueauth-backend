@@ -11,5 +11,9 @@ app.use(express.json())
 app.use(cors())
 app.use(router)
 
+app.get('/', (req, res) => {
+    res.send('Olá! Bem-vindo à raiz da aplicação!');
+  });
+
 app.listen(PORT,()=>console.log("Server running "+PORT))
 
