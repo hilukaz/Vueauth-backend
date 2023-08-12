@@ -18,3 +18,14 @@ Dependências OUT
 npm install bcrypt
 npm install jsonwebtoken
 npm install -D @types/jsonwebtoken
+
+PlanetScale
+pscale db create vueauth
+pscale branch create vueauth initial-setup
+pscale connect vueauth initial-setup --port 3309
+npx prisma db push
+
+Vercel
+npm install -g vercel 
+vercel 
+vercel --prod

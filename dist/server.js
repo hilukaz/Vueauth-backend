@@ -11,5 +11,8 @@ const PORT = process.env.PORT || 3000;
 app.use(express_1.default.json());
 app.use(cors());
 app.use(routes_1.router);
+app.get('/a', (req, res) => {
+    res.send('Olá! Bem-vindo à raiz da aplicação!');
+});
 app.listen(PORT, () => console.log("Server running " + PORT));
 //# sourceMappingURL=server.js.map

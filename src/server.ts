@@ -8,10 +8,12 @@ const cors=require('cors')
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: 'https://vueauth-frontend.vercel.app/'
+}));
 app.use(router)
 
-app.get('/', (req, res) => {
+app.get('/a', (req, res) => {
     res.send('Olá! Bem-vindo à raiz da aplicação!');
   });
 
