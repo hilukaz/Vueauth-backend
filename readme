@@ -29,3 +29,4 @@ Vercel
 npm install -g vercel 
 vercel 
 vercel --prod
+prisma generate
